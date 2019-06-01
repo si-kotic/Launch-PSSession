@@ -1,6 +1,6 @@
 Function Launch-PSSession {
     Param (
-        $ComputerName,
+        [Parameter(Mandatory)]$ComputerName,
         [ValidateSet("Black","DarkBlue","DarkGreen","DarkCyan","DarkRed","DarkYellow","Gray","DarkGray")]$BackgroundColour
     )
     $colourPairs = [Management.Automation.PSObject]@{
